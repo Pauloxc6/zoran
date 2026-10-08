@@ -112,7 +112,7 @@ function uninstall_pkg(){
     local bin_pkg="$HOME/.local/bin/${pkg}"
 
     # Solicita confirmação do usuário
-    if [ -z "${sn}" ]; then read -rp $'\e[33;1mContinuar a instalação [s/n]: \e[0m' sn; fi
+    if [ -z "${sn}" ]; then read -rp $'\e[33;1mContinuar a desinstalação [s/n]: \e[0m' sn; fi
 
     if [ "${sn}" == "s" ]; then
         echo -e "${GREEN}[*] Uninstall: ${WHITE}${pkg}${RESET}"

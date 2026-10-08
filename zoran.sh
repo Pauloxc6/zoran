@@ -207,7 +207,7 @@ if [ -z "$1" ]; then __help__; exit 1 ; fi
 # Loop para processar múltiplos argumentos informados via linha de comando
 while [ "$#" -gt 0 ]; do
     case "$1" in
-        "-h") __help__ ;;
+        "-h"|"--help") __help__ ;;
         "-y") sn="s" ;;
         "--version") echo -e "${WHITE}Zoran | Version: 1.1${RESET}" ;;
         "search") shift   ; search "$1"      ;;

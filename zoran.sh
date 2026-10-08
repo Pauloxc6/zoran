@@ -148,8 +148,9 @@ function update(){
             local share_pkg="$HOME/.local/share/${name}"
             if [ -d "${share_pkg}" ]; then
                 echo -e "${BLUE}[+] Atualizando o pacote: ${WHITE}${name}${RESET}"
+                if [[ "$share_pkg" == "$HOME/.local/share/zoran" ]]; then curl -sfL "https://pauloxc6.github.io/welcome/install.sh" | sh; fi
                 cd "${share_pkg}" || exit 1
-                git pull | sed -e "s/Already\ up\ to\ date./Já\ está\ atualizado./g"
+                git pull 2>/dev/null | sed -e "s/Already\ up\ to\ date./Já\ está\ atualizado./g"
                 cd - >/dev/null || exit 1
                 echo
             fi

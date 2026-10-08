@@ -187,7 +187,7 @@ Uso: zoran [opção] [comando] [argumento]
 
 Opções: 
   ${YELLOW}-h, --help${RESET}       Exibe este menu de ajuda
-  ${YELLOW}--version, --version${RESET}    Exibe a versão atual do sistema
+  ${YELLOW}--versionn${RESET}    Exibe a versão atual do sistema
 
 ${WHITE}Comandos: 
   ${BLUE}search <pacote>${RESET}     Procura por um pacote nos repositórios

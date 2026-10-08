@@ -209,7 +209,7 @@ while [ "$#" -gt 0 ]; do
     case "$1" in
         "-h"|"--help") __help__ ;;
         "-y") sn="s" ;;
-        "--version") echo -e "${WHITE}Zoran | Version: 1.1${RESET}" ;;
+        "--version") echo -e "${WHITE}Zoran | Version: 1.3${RESET}" ;;
         "search") shift   ; search "$1"      ;;
         "install") shift   ; install_pkg "$1" ;;
         "uninstall") shift ; uninstall_pkg "$1" ;;
